@@ -35,5 +35,10 @@ export class AccountComponent implements OnInit {
       error => console.log(error),
     );
   }
+  // addMoney() {
+  //   this.user.money += 1;
+  //   this.userService.editUser(this.user).subscribe();
 
-}
+  //   }
+  }
+
