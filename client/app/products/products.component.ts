@@ -12,7 +12,7 @@ import { Product } from '../shared/models/product.model';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-
+  user: any;
   product = new Product();
   products: Product[] = [];
   isLoading = true;
@@ -91,6 +91,9 @@ export class ProductsComponent implements OnInit {
         error => console.log(error),
       );
     }
+  }
+  deleteMoney(product) {
+    this.user.money -= product.price
   }
 
 }

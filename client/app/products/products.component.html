@@ -27,7 +27,7 @@
             <td>
               <button *ngIf="this.auth.isAdmin" class="btn btn-sm btn-primary" (click)="enableEditing(product)"><i class="fa fa-pencil"></i> Edit</button>
               <button *ngIf="this.auth.isAdmin" class="btn btn-sm btn-danger" (click)="deleteProduct(product)"><i class="fa fa-trash"></i> Delete</button>
-              <button *ngIf="!this.auth.isAdmin" class="btn btn-sm btn-info" (click)="deleteProduct(product)"><i class="fa fa-dollar"></i> Buy it now !</button>
+              <button *ngIf="!this.auth.isAdmin" class="btn btn-sm btn-info" (click)="deleteMoney(product)"><i class="fa fa-dollar"></i> Buy it now !</button>
             </td>
           </tr>
         </tbody>
